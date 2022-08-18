@@ -1,5 +1,6 @@
 import About from "./component/about";
 import Photogrid from "./Photogrid";
+import Details from "./component/Details";
 
 const HomePage = () => {
     return (
@@ -7,6 +8,7 @@ const HomePage = () => {
             <hr />
             <Photogrid />
             <About />
+            <Details />
         </div>
     );
 };
