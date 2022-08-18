@@ -5,6 +5,7 @@ import { useState } from "react";
 import APIUrl from "./APIUrl";
 import { useNavigate } from "react-router-dom";
 import { Paper } from "@mui/material";
+import HomePage from "./HomePage";
 
 const Login = () => {
     const [username, setUsername] = useState("");
@@ -33,7 +34,7 @@ const Login = () => {
             if (data.error) {
                 setError(data.error);
             } else {
-                navigate("/login");
+                navigate(`${(<HomePage />)}`);
             }
         } catch (error) {
             setError("login Failed. please try again");

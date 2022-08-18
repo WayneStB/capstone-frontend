@@ -6,8 +6,8 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 
 export default function TitlebarBelowMasonryImageList() {
     return (
-        <Box sx={{ width: 450, overflowY: "scroll" }}>
-            <ImageList variant="masonry" cols={3} gap={8}>
+        <Box sx={{ width: 600, overflowY: "scroll" }}>
+            <ImageList variant="masonry" cols={4} gap={8}>
                 {itemData.map((item) => (
                     <ImageListItem key={item.img}>
                         <img
@@ -17,7 +17,7 @@ export default function TitlebarBelowMasonryImageList() {
                             loading="lazy"
                         />
                         <ImageListItemBar
-                            position="below"
+                            position="circular"
                             title={item.author}
                         />
                     </ImageListItem>
