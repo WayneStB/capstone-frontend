@@ -67,7 +67,7 @@ const Login = () => {
                         onChange={(evt) => {
                             setUsername(evt.target.value);
                         }}
-                        // add onChange & value to connect to the useState on line 6
+                        // hhadd onChange & value to connect to the useState on line 6
                     />
                 </div>
                 <div>
