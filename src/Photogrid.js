@@ -17,7 +17,7 @@ export default function TitlebarBelowMasonryImageList() {
                             loading="lazy"
                         />
                         <ImageListItemBar
-                            position="circular"
+                            position="bottom"
                             title={item.author}
                         />
                     </ImageListItem>
@@ -29,52 +29,52 @@ export default function TitlebarBelowMasonryImageList() {
 
 const itemData = [
     {
-        img: "/Photos-001/20210716_025332.jpg",
+        img: "https://pureflix.s3.amazonaws.com/20210716_025332.jpg",
         title: "Sink",
         author: "Wayne Boyd",
     },
     {
-        img: "/Photos-001/20210725_021643.jpg",
+        img: "https://pureflix.s3.amazonaws.com/20210725_021643.jpg",
         title: "Kitchen",
         author: "Wayne Boyd",
     },
     {
-        img: "/Photos-001/20210728_003348.jpg",
+        img: "https://pureflix.s3.amazonaws.com/20210728_003348.jpg",
         title: "Blinds",
         author: "Wayne Boyd",
     },
     {
-        img: "/Photos-001/20211002_025436.jpg",
+        img: "https://pureflix.s3.amazonaws.com/20211002_025436.jpg",
         title: "Chairs",
         author: "Wayne Boyd",
     },
     {
-        img: "/Photos-001/20211006_190309.jpg",
+        img: "https://pureflix.s3.amazonaws.com/20211006_190309.jpg",
         title: "Laptop",
         author: "Wayne Boyd",
     },
     {
-        img: "/Photos-001/Snapchat-70079339.jpg",
+        img: "https://pureflix.s3.amazonaws.com/Snapchat-70079339.jpg",
         title: "Doors",
         author: "Wayne Boyd",
     },
     {
-        img: "/Photos-001/Snapchat-133848445.jpg",
+        img: "https://pureflix.s3.amazonaws.com/Snapchat-133848445.jpg",
         title: "Coffee",
         author: "Wayne Boyd",
     },
     {
-        img: "/Photos-001/Snapchat-446673106.jpg",
+        img: "https://pureflix.s3.amazonaws.com/Snapchat-446673106.jpg",
         title: "Storage",
         author: "Wayne Boyd",
     },
     {
-        img: "/Photos-001/Snapchat-513930123.jpg",
+        img: "https://pureflix.s3.amazonaws.com/Snapchat-513930123.jpg",
         title: "Candle",
         author: "Wayne Boyd",
     },
     {
-        img: "/Photos-001/Snapchat-2024015534.jpg",
+        img: "https://pureflix.s3.amazonaws.com/Snapchat-2024015534.jpg",
         title: "Coffee table",
         author: "Wayne Boyd",
     },

@@ -1,17 +1,20 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { useState } from "react";
 import APIUrl from "./APIUrl";
-import { useNavigate } from "react-router-dom";
-import { Paper } from "@mui/material";
 import HomePage from "./HomePage";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { Alert, Paper } from "@mui/material";
 
 const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
+
+    const isNewUser = searchParams.get("newUser");
+
     //add useState here
     const login = async (evt) => {
         //make fetch to backend
@@ -34,7 +37,7 @@ const Login = () => {
             if (data.error) {
                 setError(data.error);
             } else {
-                navigate(`${(<HomePage />)}`);
+                navigate("/");
             }
         } catch (error) {
             setError("login Failed. please try again");
@@ -44,7 +47,6 @@ const Login = () => {
 
     return (
         <Paper
-            component="form"
             sx={{
                 p: "2px 4px",
                 display: "flex",
@@ -53,7 +55,8 @@ const Login = () => {
             }}
         >
             <header>Please Log In</header>
-
+            {isNewUser &&
+                Alert.window("Your account has been created. please log in")}
             <form onSubmit={login}>
                 <div>
                     <label htmlFor="exampleInputEmail1" className="form-label">
@@ -90,6 +93,7 @@ const Login = () => {
                     <Button type="submit" className="btn btn-primary">
                         Login
                     </Button>
+                    <Link to="/createAccount">Create New account</Link>
                 </div>
             </form>
         </Paper>

@@ -32,7 +32,11 @@ const Navbar = () => {
                         <MDBNavbarNav right className="mb-2 mb-lg-0">
                             <MDBNavbarItem active>
                                 <Link to="/">
-                                    <MDBNavbarLink aria-current="page" href="#">
+                                    <MDBNavbarLink
+                                        to="/"
+                                        aria-current="page"
+                                        href="#"
+                                    >
                                         Home
                                     </MDBNavbarLink>
                                 </Link>
@@ -47,7 +51,7 @@ const Navbar = () => {
                                 <MDBNavbarLink href="#">Friends</MDBNavbarLink>
                             </MDBNavbarItem>
                         </MDBNavbarNav>
-                        <MDBNavbarNav end className="d-flex flex-row-reverse">
+                        <MDBNavbarNav className="d-flex flex-row-reverse">
                             <MDBNavbarItem>
                                 <Link to="/login">
                                     <MDBNavbarLink>Sign In</MDBNavbarLink>

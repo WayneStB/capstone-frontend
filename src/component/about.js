@@ -3,10 +3,9 @@ const About = () => {
         <>
             <div
                 style={{
-                    backgroundImage: `url(${
-                        process.env.PUBLIC_URL +
-                        "/Photos-001/istockphoto-1188746069-1024x1024.jpg"
-                    })`,
+                    backgroundImage: `url(
+                        "https://pureflix.s3.amazonaws.com/istockphoto-1188746069-1024x1024.jpg"
+                    )`,
                 }}
             >
                 Hello World
